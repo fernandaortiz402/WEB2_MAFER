@@ -264,4 +264,3 @@ Además, en **`client/package.json`** el campo **`proxy`** apunta a **`http://lo
 - El nombre **Movie Box** identifica la experiencia de usuario; el repositorio puede conservar nombres de paquete heredados (`movie-paradise`, etc.) sin afectar la narrativa comercial en la UI.
 - Cualquier ampliación del dominio (nuevas rutas, modelos o seeds) debe seguir la convención **Movies** y mantener coherencia con `/api/movies`.
 
-_Documentación generada para fines académicos y de entrega del proyecto._
