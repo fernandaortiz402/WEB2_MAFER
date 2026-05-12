@@ -1,0 +1,60 @@
+:root {
+  /* Blockbuster — alto contraste */
+  --primary: #003399;
+  --secondary: #fff000;
+  --primary-dark: #001040;
+  --bg: #021a4a;
+  --bg-card: rgba(8, 37, 117, 0.92);
+  --bg-secondary: #071e5c;
+  --muted: #ffe566;
+  --txt: #fff000;
+  --txt-body: #fff9c4;
+  --accent: #fff59d;
+  --success: #00c853;
+  --warning: #ffc107;
+  --danger: #ff5252;
+  --border: rgba(255, 255, 255, 0.18);
+  --font-display: 'Bebas Neue', 'Impact', sans-serif;
+  --font-body: 'Montserrat', 'Roboto', system-ui, sans-serif;
+  --radius-block: 18px;
+  --radius-ticket: 22px;
+  --glass-bg: rgba(8, 37, 117, 0.55);
+  --glass-border: rgba(255, 240, 0, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--txt-body);
+  line-height: 1.65;
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+.section__head h2,
+.brand {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--secondary);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+}
+
+p,
+li,
+label {
+  color: var(--txt-body);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

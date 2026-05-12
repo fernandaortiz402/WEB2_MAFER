@@ -1,0 +1,71 @@
+# Project .gitignore for Mi_prograweb2-main
+# Generated for Node + React monorepo with server and client folders
+
+# Dependency directories
+node_modules/
+server/node_modules/
+client/node_modules/
+
+# Production build output
+client/build/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime files
+pids
+*.pid
+*.pid.lock
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Coverage directories and reports
+coverage
+*.lcov
+.nyc_output
+
+# Optional caches
+.npm
+.eslintcache
+.stylelintcache
+.cache
+.parcel-cache
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Build/system directories
+build/Release
+.webpack/
+.svelte-kit
+
+# Environment variables
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor files
+.vscode/
+.idea/
+*.sublime*
+*.code-workspace
+
+# Misc
+*.tgz
+.node_repl_history
+
+# Ignore generated React service worker output if present
+service-worker.js
+
+# Keep repository assets such as server/uploads if they are intentionally committed
+# Do not ignore /server/uploads if these images should remain in repo

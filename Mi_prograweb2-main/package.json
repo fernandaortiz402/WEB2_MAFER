@@ -1,0 +1,17 @@
+{
+  "name": "movie-paradise",
+  "private": true,
+  "description": "Instala dependencias del server (incl. multer), seed de películas y arranca API + frontend.",
+  "scripts": {
+    "install:server": "npm install --prefix server",
+    "install:client": "npm install --prefix client",
+    "install:all": "npm run install:server && npm run install:client",
+    "seed:movies": "npm run seed:movies --prefix server",
+    "dev:api": "npm run dev --prefix server",
+    "dev:web": "npm start --prefix client",
+    "blockbuster": "npm run install:server && npm run seed:movies --prefix server && npx concurrently -n api,web -c blue,yellow \"npm run dev --prefix server\" \"npm start --prefix client\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
